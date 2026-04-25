@@ -595,6 +595,18 @@ em.warn,
   margin-left: auto;
 }
 
+.map-legend {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  width: min(220px, calc(100% - 44px));
+  padding: 15px;
+  background: rgba(7, 20, 23, 0.74);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  backdrop-filter: blur(10px);
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -676,26 +688,37 @@ td {
 }
 
 .world-map {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 210px;
-  gap: 22px;
-  align-items: center;
+  position: relative;
+  display: block;
+  min-width: 0;
 }
 
 .world-map svg {
   width: 100%;
-  min-height: 300px;
-  padding: 20px;
+  min-height: 360px;
+  display: block;
+  padding: 18px;
   background:
-    radial-gradient(circle at 50% 45%, rgba(53, 198, 189, 0.13), transparent 320px),
+    radial-gradient(circle at 42% 48%, rgba(53, 198, 189, 0.14), transparent 320px),
+    radial-gradient(circle at 80% 55%, rgba(231, 185, 92, 0.1), transparent 250px),
     linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025));
   border: 1px solid var(--line);
   border-radius: var(--radius);
 }
 
+.gridline {
+  fill: none;
+  stroke: rgba(200, 221, 218, 0.07);
+  stroke-width: 1;
+}
+
+.gridline.vertical {
+  stroke-dasharray: 8 14;
+}
+
 .land {
-  fill: rgba(205, 231, 228, 0.16);
-  stroke: rgba(205, 231, 228, 0.18);
+  fill: url(#landGradient);
+  stroke: rgba(205, 231, 228, 0.24);
   stroke-width: 2;
 }
 
@@ -708,6 +731,10 @@ td {
 
 .route-alt {
   stroke: rgba(231, 185, 92, 0.2);
+}
+
+.route-third {
+  stroke: rgba(200, 221, 218, 0.16);
 }
 
 .pin {
@@ -797,8 +824,7 @@ td {
   .executive-grid,
   .finance-grid,
   .support-grid,
-  .enterprise-grid,
-  .world-map {
+  .enterprise-grid {
     grid-template-columns: 1fr;
   }
 
@@ -848,6 +874,16 @@ td {
   .table-panel,
   .invoice-panel {
     overflow-x: auto;
+  }
+
+  .world-map svg {
+    min-height: 290px;
+  }
+
+  .map-legend {
+    position: static;
+    width: 100%;
+    margin-top: 12px;
   }
 
   table {
