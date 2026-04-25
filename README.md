@@ -1,46 +1,31 @@
-# AdminOS | Painel Administrativo SaaS
+# AdminOS | Propostas de Painel Administrativo SaaS
 
-Painel administrativo completo para portfólio, criado em HTML, CSS e JavaScript puro. O projeto simula a operação de um SaaS brasileiro com visão executiva, CRM, usuários, financeiro, chamados, auditoria, indicadores e configurações.
+Prancha visual em HTML e CSS com quatro propostas profissionais de painel administrativo SaaS, em português do Brasil.
+
+## Layouts incluídos
+
+- **Visão Executiva:** KPIs densos, receita recorrente, composição de planos, top clientes e alertas.
+- **Financeiro & CRM:** faturas, inadimplência, recebimentos e pipeline comercial.
+- **Central de Suporte:** interface dark mode com filas, SLA, chamados e mapa de saúde dos clientes.
+- **Enterprise Clean:** visual claro, corporativo, limpo, com indicadores, gráficos, clientes e atalhos.
 
 ## Recursos
 
-- Visão geral com KPIs, metas, receita prevista e contas em risco.
-- CRM com busca, filtros, saúde da conta e cadastro rápido de cliente.
-- Gestão de usuários com papéis, status e controle de acesso.
-- Financeiro com faturas, MRR, pendências e exportação CSV.
-- Central de chamados com prioridade, responsável e SLA.
-- Indicadores de crescimento, expansão e qualidade da base.
-- Auditoria com eventos operacionais e alterações sensíveis.
-- Configurações de segurança, operação e faturamento.
-- Tema claro/escuro, modo compacto e persistência via `localStorage`.
+- Prancha 2x2 inspirada em apresentação profissional de produto.
 - Layout responsivo para desktop, tablet e mobile.
+- Componentes de UI reutilizáveis: cards, tabelas, KPIs, gráficos, chips e painéis.
+- Paleta, tipografia, componentes e prévia de dark mode no rodapé.
+- Sem dependências externas.
 
 ## Stack
 
 - HTML5
 - CSS3
-- JavaScript ES6
-- Sem dependências externas
 
 ## Como rodar
 
 Abra o arquivo `index.html` no navegador.
 
-## Estrutura
-
-```text
-.
-|-- index.html
-|-- styles.css
-|-- app.js
-|-- assets/
-|   `-- admin-mark.svg
-|-- docs/
-|   `-- portfolio.md
-|-- README.md
-`-- LICENSE
-```
-
 ## Objetivo de portfólio
 
-Este painel demonstra capacidade de construir interfaces administrativas densas, organizadas, responsivas e com fluxos reais de gestão. Ele pode ser evoluído para React, Next.js, Vue, Laravel, FastAPI ou qualquer backend REST.
+Este projeto demonstra capacidade visual para criar interfaces administrativas SaaS com linguagem brasileira, composição profissional e componentes de gestão reais.
