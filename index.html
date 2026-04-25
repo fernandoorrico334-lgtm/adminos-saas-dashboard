@@ -5,60 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Prancha de layouts para painel administrativo SaaS com quatro propostas visuais em português do Brasil."
+      content="AdminOS, painel administrativo SaaS em português do Brasil com visão executiva, financeiro, CRM, suporte e operação."
     />
-    <title>AdminOS | Propostas de Painel Administrativo</title>
+    <title>AdminOS | Painel Administrativo SaaS</title>
     <link rel="icon" href="assets/admin-mark.svg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="showcase" aria-label="Propostas visuais AdminOS">
-      <section class="layout-card executive">
-        <header class="concept-title">
-          <span>1</span>
+    <header class="app-topbar">
+      <a class="brand" href="#inicio" aria-label="AdminOS">
+        <img src="assets/admin-mark.svg" alt="" />
+        <span>
+          <strong>AdminOS</strong>
+          <small>Painel Administrativo SaaS</small>
+        </span>
+      </a>
+
+      <nav class="top-nav" aria-label="Navegação principal">
+        <a href="#executivo">Executivo</a>
+        <a href="#financeiro">Financeiro</a>
+        <a href="#suporte">Suporte</a>
+        <a href="#operacao">Operação</a>
+      </nav>
+
+      <div class="top-actions">
+        <span class="live-dot">Sistema online</span>
+        <a class="primary-action" href="#executivo">Acessar painel</a>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">AdminOS Enterprise</p>
+          <h1>Gestão completa para SaaS, operação e atendimento.</h1>
+          <p>
+            Uma interface escura, densa e profissional para acompanhar receita,
+            clientes, faturas, SLAs, auditoria e times em uma única central.
+          </p>
+        </div>
+
+        <aside class="hero-status" aria-label="Resumo operacional">
           <div>
-            <h1>Visão Executiva</h1>
-            <p>Indicadores densos com foco em performance do negócio.</p>
+            <span>Receita mensal</span>
+            <strong>R$ 4,38M</strong>
+            <small>+12,4% no ciclo</small>
+          </div>
+          <div>
+            <span>SLA cumprido</span>
+            <strong>96,1%</strong>
+            <small>18m resposta média</small>
+          </div>
+          <div>
+            <span>Clientes ativos</span>
+            <strong>512</strong>
+            <small>74% da meta</small>
+          </div>
+        </aside>
+      </section>
+
+      <section class="module-section" id="executivo">
+        <header class="section-heading">
+          <span>01</span>
+          <div>
+            <p class="eyebrow">Visão Executiva</p>
+            <h2>Indicadores estratégicos do negócio</h2>
+            <p>Receita, MRR, churn, carteira e alertas críticos em um painel de decisão.</p>
           </div>
         </header>
 
-        <div class="mockup light executive-screen">
-          <aside class="mock-sidebar expanded">
-            <div class="mock-brand">
+        <div class="dashboard-shell executive-dashboard">
+          <aside class="dashboard-sidebar">
+            <div class="mini-brand">
               <img src="assets/admin-mark.svg" alt="" />
               <strong>AdminOS</strong>
             </div>
-            <nav>
-              <span class="active">Visão geral</span>
-              <span>Indicadores</span>
-              <span>Receita</span>
-              <span>Clientes</span>
-              <span>Produtos</span>
-              <span>Vendas</span>
-              <span>Marketing</span>
-              <span>Financeiro</span>
-              <span>Relatórios</span>
-              <span>Configurações</span>
-            </nav>
-            <div class="mock-user">
+            <a class="active" href="#executivo">Visão geral</a>
+            <a href="#financeiro">Receita</a>
+            <a href="#financeiro">Clientes</a>
+            <a href="#suporte">Operações</a>
+            <a href="#operacao">Relatórios</a>
+            <a href="#operacao">Configurações</a>
+            <div class="sidebar-user">
               <i></i>
-              <div>
+              <span>
                 <strong>Camila Alves</strong>
-                <small>camila@adminos.com</small>
-              </div>
+                <small>Diretoria de Operações</small>
+              </span>
             </div>
           </aside>
 
-          <section class="mock-content">
-            <div class="mock-toolbar">
+          <div class="dashboard-content">
+            <div class="dashboard-toolbar">
               <label>Buscar métricas, clientes, relatórios...</label>
-              <div class="toolbar-actions">
-                <button>01 Mai 2024 - 31 Mai 2024</button>
-                <button>⚙</button>
-              </div>
+              <button>01 Mai 2024 - 31 Mai 2024</button>
             </div>
 
-            <div class="kpi-row five">
+            <div class="metric-grid five">
               <article><span>Receita total</span><strong>R$ 4,38M</strong><small>+12,4%</small></article>
               <article><span>MRR</span><strong>R$ 987K</strong><small>+8,7%</small></article>
               <article><span>Novos clientes</span><strong>128</strong><small>+15,2%</small></article>
@@ -66,89 +109,113 @@
               <article><span>LTV</span><strong>R$ 7,6K</strong><small>+5,3%</small></article>
             </div>
 
-            <div class="mock-grid two">
-              <article class="panel span-large">
-                <div class="panel-head"><strong>Receita recorrente</strong><button>Diário</button></div>
+            <div class="executive-grid">
+              <article class="panel chart-panel">
+                <div class="panel-title">
+                  <strong>Receita recorrente</strong>
+                  <button>Diário</button>
+                </div>
                 <div class="bar-chart">
-                  <i style="height: 32%"></i><i style="height: 44%"></i><i style="height: 38%"></i><i style="height: 51%"></i>
-                  <i style="height: 48%"></i><i style="height: 62%"></i><i style="height: 58%"></i><i style="height: 70%"></i>
+                  <i style="height: 36%"></i><i style="height: 46%"></i><i style="height: 42%"></i><i style="height: 54%"></i>
+                  <i style="height: 51%"></i><i style="height: 64%"></i><i style="height: 59%"></i><i style="height: 70%"></i>
                   <i style="height: 66%"></i><i style="height: 78%"></i><i style="height: 74%"></i><i style="height: 86%"></i>
-                  <i style="height: 83%"></i><i style="height: 92%"></i>
+                  <i style="height: 83%"></i><i style="height: 92%"></i><i style="height: 89%"></i><i style="height: 98%"></i>
                 </div>
               </article>
+
               <article class="panel donut-panel">
-                <div class="panel-head"><strong>Receita por plano</strong></div>
+                <div class="panel-title"><strong>Receita por plano</strong></div>
                 <div class="donut"><span>R$ 4,38M<small>Total</small></span></div>
-                <ul class="legend">
-                  <li><b></b>Corporativo 58%</li>
-                  <li><b></b>Profissional 27%</li>
-                  <li><b></b>Crescimento 12%</li>
+                <ul class="legend-list">
+                  <li><b></b>Corporativo <strong>58%</strong></li>
+                  <li><b></b>Profissional <strong>27%</strong></li>
+                  <li><b></b>Crescimento <strong>12%</strong></li>
+                  <li><b></b>Essencial <strong>3%</strong></li>
                 </ul>
               </article>
-            </div>
 
-            <div class="mock-grid table-alerts">
               <article class="panel table-panel">
-                <div class="panel-head"><strong>Top clientes</strong></div>
+                <div class="panel-title"><strong>Top clientes</strong></div>
                 <table>
-                  <tr><th>Cliente</th><th>Plano</th><th>MRR</th><th>Saúde</th></tr>
-                  <tr><td>TechNova Ltda.</td><td>Corporativo</td><td>R$ 82.500</td><td><em>Alta</em></td></tr>
-                  <tr><td>DataSphere S.A.</td><td>Corporativo</td><td>R$ 67.800</td><td><em>Alta</em></td></tr>
-                  <tr><td>Grupo Orion</td><td>Profissional</td><td>R$ 34.900</td><td><em class="warn">Média</em></td></tr>
+                  <thead>
+                    <tr><th>Cliente</th><th>Plano</th><th>MRR</th><th>Saúde</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>TechNova Ltda.</td><td>Corporativo</td><td>R$ 82.500</td><td><em>Alta</em></td></tr>
+                    <tr><td>DataSphere S.A.</td><td>Corporativo</td><td>R$ 67.800</td><td><em>Alta</em></td></tr>
+                    <tr><td>Grupo Orion</td><td>Profissional</td><td>R$ 34.900</td><td><em class="warn">Média</em></td></tr>
+                    <tr><td>StartWay Ltda.</td><td>Crescimento</td><td>R$ 18.700</td><td><em class="warn">Média</em></td></tr>
+                  </tbody>
                 </table>
               </article>
+
               <article class="panel alert-panel">
-                <div class="panel-head"><strong>Alertas</strong></div>
-                <p>Churn acima da meta</p>
-                <p>3 faturas em atraso</p>
-                <p>Uso de API elevado</p>
-                <button>Ver todos</button>
+                <div class="panel-title"><strong>Alertas</strong></div>
+                <p><span>Churn acima da meta</span><strong>2,41%</strong></p>
+                <p><span>3 faturas em atraso</span><strong>R$ 34,5K</strong></p>
+                <p><span>Uso de API elevado</span><strong>80%</strong></p>
               </article>
             </div>
-          </section>
+          </div>
         </div>
       </section>
 
-      <section class="layout-card finance">
-        <header class="concept-title">
-          <span>2</span>
+      <section class="module-section" id="financeiro">
+        <header class="section-heading">
+          <span>02</span>
           <div>
-            <h1>Financeiro & CRM</h1>
-            <p>Gestão financeira e pipeline comercial integrados.</p>
+            <p class="eyebrow">Financeiro & CRM</p>
+            <h2>Faturamento e pipeline comercial integrados</h2>
+            <p>Controle de recebimentos, inadimplência, faturas e evolução de oportunidades.</p>
           </div>
         </header>
 
-        <div class="mockup light finance-screen">
-          <aside class="mock-sidebar rail">
+        <div class="dashboard-shell finance-dashboard">
+          <aside class="rail-nav">
             <img src="assets/admin-mark.svg" alt="" />
-            <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <i class="active"></i><i></i><i></i><i></i><i></i><i></i>
           </aside>
-          <section class="mock-content">
-            <div class="mock-toolbar">
+
+          <div class="dashboard-content">
+            <div class="dashboard-toolbar">
               <label>Buscar clientes, negócios, faturas...</label>
-              <div class="toolbar-actions"><button>Filtros</button><button>Exportar</button></div>
+              <div><button>Filtros</button><button>Exportar</button></div>
             </div>
-            <div class="kpi-row five">
+
+            <div class="metric-grid five">
               <article><span>Faturamento</span><strong>R$ 4,38M</strong><small>+12,4%</small></article>
               <article><span>Recebido</span><strong>R$ 3,92M</strong><small>+0,8%</small></article>
               <article><span>Em aberto</span><strong>R$ 461K</strong><small class="bad">-3,1%</small></article>
               <article><span>Inadimplência</span><strong>R$ 87K</strong><small>+2,6%</small></article>
               <article><span>Ticket médio</span><strong>R$ 2,1K</strong><small>+6,5%</small></article>
             </div>
-            <div class="mock-grid finance-grid">
+
+            <div class="finance-grid">
               <article class="panel invoice-panel">
-                <div class="panel-head"><strong>Receitas & faturas</strong><button>Todas</button></div>
+                <div class="panel-title">
+                  <strong>Receitas & faturas</strong>
+                  <button>Todas</button>
+                </div>
                 <table>
-                  <tr><th>Fatura</th><th>Cliente</th><th>Valor</th><th>Status</th><th>Pagamento</th></tr>
-                  <tr><td>#FT-10293</td><td>TechNova Ltda.</td><td>R$ 82.500</td><td><em>Pago</em></td><td>Pix</td></tr>
-                  <tr><td>#FT-10291</td><td>Grupo Orion</td><td>R$ 34.900</td><td><em class="warn">Aberto</em></td><td>Boleto</td></tr>
-                  <tr><td>#FT-10290</td><td>StartWay Ltda.</td><td>R$ 18.700</td><td><em class="bad">Vencida</em></td><td>Boleto</td></tr>
-                  <tr><td>#FT-10288</td><td>Alpha Sistemas</td><td>R$ 12.450</td><td><em class="warn">Aberto</em></td><td>Boleto</td></tr>
-                  <tr><td>#FT-10287</td><td>Beta Solutions</td><td>R$ 9.870</td><td><em>Pago</em></td><td>Cartão</td></tr>
+                  <thead>
+                    <tr><th>Fatura</th><th>Cliente</th><th>Vencimento</th><th>Valor</th><th>Status</th><th>Pagamento</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>#FT-10293</td><td>TechNova Ltda.</td><td>05/06/2024</td><td>R$ 82.500</td><td><em>Pago</em></td><td>Pix</td></tr>
+                    <tr><td>#FT-10292</td><td>DataSphere S.A.</td><td>04/06/2024</td><td>R$ 67.800</td><td><em>Pago</em></td><td>Boleto</td></tr>
+                    <tr><td>#FT-10291</td><td>Grupo Orion</td><td>03/06/2024</td><td>R$ 34.900</td><td><em class="warn">Aberto</em></td><td>Boleto</td></tr>
+                    <tr><td>#FT-10290</td><td>StartWay Ltda.</td><td>01/06/2024</td><td>R$ 18.700</td><td><em class="bad">Vencida</em></td><td>Boleto</td></tr>
+                    <tr><td>#FT-10288</td><td>Alpha Sistemas</td><td>29/05/2024</td><td>R$ 12.450</td><td><em class="warn">Aberto</em></td><td>Boleto</td></tr>
+                    <tr><td>#FT-10287</td><td>Beta Solutions</td><td>28/05/2024</td><td>R$ 9.870</td><td><em>Pago</em></td><td>Cartão</td></tr>
+                  </tbody>
                 </table>
               </article>
+
               <article class="panel pipeline-panel">
-                <div class="panel-head"><strong>Pipeline de vendas</strong><button>Este mês</button></div>
+                <div class="panel-title">
+                  <strong>Pipeline de vendas</strong>
+                  <button>Este mês</button>
+                </div>
                 <div class="pipeline-item"><span>Prospecção <b>R$ 1,23M</b></span><i style="width: 92%"></i><small>18 negócios</small></div>
                 <div class="pipeline-item"><span>Qualificação <b>R$ 2,45M</b></span><i style="width: 74%"></i><small>26 negócios</small></div>
                 <div class="pipeline-item"><span>Proposta <b>R$ 1,67M</b></span><i style="width: 66%"></i><small>14 negócios</small></div>
@@ -156,160 +223,205 @@
                 <div class="pipeline-item"><span>Ganho <b>R$ 1,12M</b></span><i style="width: 61%"></i><small>7 negócios</small></div>
               </article>
             </div>
-          </section>
+          </div>
         </div>
       </section>
 
-      <section class="layout-card support">
-        <header class="concept-title dark-title">
-          <span>3</span>
+      <section class="module-section" id="suporte">
+        <header class="section-heading">
+          <span>03</span>
           <div>
-            <h1>Central de Suporte</h1>
-            <p>Centro de operações com foco em SLA e resolução.</p>
+            <p class="eyebrow">Central de Suporte</p>
+            <h2>Operação de atendimento em tempo real</h2>
+            <p>Filas, SLAs, chamados críticos, atividade do time e saúde global dos clientes.</p>
           </div>
         </header>
 
-        <div class="mockup dark support-screen">
-          <aside class="mock-sidebar expanded">
-            <div class="mock-brand"><img src="assets/admin-mark.svg" alt="" /><strong>AdminOS</strong></div>
-            <nav>
-              <span>Command Center</span>
-              <span class="active">Chamados</span>
-              <span>SLA & Regras</span>
-              <span>Base de conhecimento</span>
-              <span>Clientes</span>
-              <span>Operações</span>
-              <span>Relatórios</span>
-              <span>Configurações</span>
-            </nav>
-            <div class="mock-user"><i></i><div><strong>Lucas Mendes</strong><small>lucas@adminos.com</small></div></div>
+        <div class="dashboard-shell support-dashboard">
+          <aside class="dashboard-sidebar">
+            <div class="mini-brand">
+              <img src="assets/admin-mark.svg" alt="" />
+              <strong>AdminOS</strong>
+            </div>
+            <a href="#suporte">Command Center</a>
+            <a class="active" href="#suporte">Chamados</a>
+            <a href="#suporte">SLA & Regras</a>
+            <a href="#suporte">Base de conhecimento</a>
+            <a href="#executivo">Clientes</a>
+            <a href="#operacao">Operações</a>
+            <a href="#operacao">Relatórios</a>
+            <a href="#operacao">Configurações</a>
+            <div class="sidebar-user">
+              <i></i>
+              <span>
+                <strong>Lucas Mendes</strong>
+                <small>lucas@adminos.com</small>
+              </span>
+            </div>
           </aside>
-          <section class="mock-content">
-            <div class="kpi-row five dark-kpis">
+
+          <div class="dashboard-content">
+            <div class="metric-grid five support-metrics">
               <article><span>Chamados abertos</span><strong>124</strong><small class="bad">+8%</small></article>
               <article><span>SLA em risco</span><strong>12</strong><small class="bad">+3,5%</small></article>
               <article><span>SLA cumprido</span><strong>96,1%</strong><small>+2,4pp</small></article>
               <article><span>Tempo médio resposta</span><strong>18m</strong><small>-4m</small></article>
               <article><span>Tempo médio resolução</span><strong>4h 32m</strong><small>-1h</small></article>
             </div>
-            <div class="mock-grid support-grid">
+
+            <div class="support-grid">
               <article class="panel queue-panel">
-                <div class="panel-head"><strong>Filas de atendimento</strong></div>
+                <div class="panel-title"><strong>Filas de atendimento</strong></div>
                 <p>Suporte nível 1 <b>48</b><em class="bad">Alta</em></p>
                 <p>Suporte nível 2 <b>36</b><em class="warn">Média</em></p>
                 <p>Suporte técnico <b>22</b><em class="warn">Média</em></p>
                 <p>Financeiro <b>10</b><em>Baixa</em></p>
+                <p>Onboarding <b>8</b><em>Baixa</em></p>
               </article>
+
               <article class="panel table-panel">
-                <div class="panel-head"><strong>Chamados em andamento</strong></div>
+                <div class="panel-title"><strong>Chamados em andamento</strong></div>
                 <table>
-                  <tr><td>#CH-2391</td><td>Erro ao emitir nota fiscal</td><td>10m</td><td><em class="bad">Alta</em></td></tr>
-                  <tr><td>#CH-2390</td><td>Integração API falhando</td><td>25m</td><td><em class="bad">Alta</em></td></tr>
-                  <tr><td>#CH-2389</td><td>Acesso de usuário bloqueado</td><td>35m</td><td><em class="warn">Média</em></td></tr>
-                  <tr><td>#CH-2387</td><td>Dúvida sobre faturamento</td><td>1h 20m</td><td><em>Baixa</em></td></tr>
+                  <tbody>
+                    <tr><td>#CH-2391</td><td>Erro ao emitir nota fiscal</td><td>10m</td><td><em class="bad">Alta</em></td></tr>
+                    <tr><td>#CH-2390</td><td>Integração API falhando</td><td>25m</td><td><em class="bad">Alta</em></td></tr>
+                    <tr><td>#CH-2389</td><td>Acesso de usuário bloqueado</td><td>35m</td><td><em class="warn">Média</em></td></tr>
+                    <tr><td>#CH-2387</td><td>Dúvida sobre faturamento</td><td>1h 20m</td><td><em>Baixa</em></td></tr>
+                  </tbody>
                 </table>
               </article>
+
               <article class="panel feed-panel">
-                <div class="panel-head"><strong>Atividade</strong></div>
-                <p>Lucas respondeu #CH-2391</p>
-                <p>Mariana atualizou SLA #CH-2389</p>
-                <p>João fechou #CH-2386</p>
-                <p>SLA em risco #CH-2390</p>
+                <div class="panel-title"><strong>Atividade</strong></div>
+                <p><span>Lucas respondeu #CH-2391</span><small>10m atrás</small></p>
+                <p><span>Mariana atualizou SLA #CH-2389</span><small>28m atrás</small></p>
+                <p><span>João fechou #CH-2386</span><small>31m atrás</small></p>
+                <p><span>SLA em risco #CH-2390</span><small>Agora</small></p>
               </article>
             </div>
-            <article class="panel map-panel">
-              <div class="map-shape">
-                <span style="left:18%;top:46%"></span><span style="left:25%;top:38%"></span><span style="left:36%;top:52%"></span>
-                <span style="left:58%;top:40%"></span><span style="left:63%;top:48%"></span><span style="left:70%;top:44%"></span>
-                <span class="bad-dot" style="left:82%;top:55%"></span><span class="warn-dot" style="left:68%;top:60%"></span>
+
+            <article class="panel world-panel">
+              <div class="panel-title">
+                <strong>Mapa de saúde dos clientes</strong>
+                <button>Atualizado agora</button>
               </div>
-              <ul class="map-legend">
-                <li><b></b>Saúde alta 68</li>
-                <li><b></b>Saúde média 24</li>
-                <li><b></b>Saúde baixa 8</li>
-              </ul>
+              <div class="world-map">
+                <svg viewBox="0 0 920 360" role="img" aria-label="Mapa mundi com marcadores de saúde dos clientes">
+                  <defs>
+                    <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur" /><feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+                  </defs>
+                  <path class="land" d="M66 116L104 84L160 78L206 108L198 145L158 166L121 154L82 166L52 145Z" />
+                  <path class="land" d="M198 176L232 194L246 248L226 314L192 334L172 292L182 236L162 204Z" />
+                  <path class="land" d="M384 105L424 78L478 86L508 118L492 152L438 158L398 142Z" />
+                  <path class="land" d="M430 164L494 176L526 226L510 294L458 316L424 270L398 214Z" />
+                  <path class="land" d="M518 102L594 72L698 86L790 124L842 178L816 224L726 220L662 186L590 198L524 162Z" />
+                  <path class="land" d="M712 255L772 244L816 272L804 314L742 322L704 292Z" />
+                  <path class="land" d="M826 242L858 236L884 260L874 286L836 280Z" />
+                  <path class="route" d="M156 144C282 82 430 82 576 130S752 188 838 270" />
+                  <path class="route route-alt" d="M226 286C354 208 502 204 700 270" />
+                  <g filter="url(#glow)">
+                    <circle class="pin high" cx="134" cy="140" r="7" />
+                    <circle class="pin high" cx="174" cy="124" r="7" />
+                    <circle class="pin mid" cx="220" cy="256" r="7" />
+                    <circle class="pin high" cx="438" cy="132" r="7" />
+                    <circle class="pin high" cx="472" cy="230" r="7" />
+                    <circle class="pin mid" cx="594" cy="162" r="7" />
+                    <circle class="pin high" cx="664" cy="180" r="7" />
+                    <circle class="pin low" cx="782" cy="206" r="7" />
+                    <circle class="pin mid" cx="748" cy="286" r="7" />
+                    <circle class="pin high" cx="836" cy="268" r="7" />
+                  </g>
+                </svg>
+                <ul class="map-legend">
+                  <li><b class="high"></b>Saúde alta <strong>68</strong></li>
+                  <li><b class="mid"></b>Saúde média <strong>24</strong></li>
+                  <li><b class="low"></b>Saúde baixa <strong>8</strong></li>
+                </ul>
+              </div>
             </article>
-          </section>
+          </div>
         </div>
       </section>
 
-      <section class="layout-card clean">
-        <header class="concept-title">
-          <span>4</span>
+      <section class="module-section" id="operacao">
+        <header class="section-heading">
+          <span>04</span>
           <div>
-            <h1>Corporativo Limpo</h1>
-            <p>Design limpo e sofisticado para gestão corporativa.</p>
+            <p class="eyebrow">Operação Enterprise</p>
+            <h2>Governança, configurações e rotina executiva</h2>
+            <p>Gestão de acessos, planos, integrações, auditoria e ações rápidas de administração.</p>
           </div>
         </header>
 
-        <div class="mockup light clean-screen">
-          <aside class="clean-nav">
-            <div class="mock-brand"><img src="assets/admin-mark.svg" alt="" /><strong>AdminOS</strong></div>
-            <nav>
-              <span class="active">Início</span><span>Indicadores</span><span>Clientes</span><span>Produtos</span>
-              <span>Financeiro</span><span>Contratos</span><span>Equipe</span><span>Configurações</span>
-            </nav>
-            <div class="mock-user"><i></i><div><strong>Juliana Costa</strong><small>juliana@adminos.com</small></div></div>
+        <div class="dashboard-shell enterprise-dashboard">
+          <aside class="dashboard-sidebar slim">
+            <div class="mini-brand">
+              <img src="assets/admin-mark.svg" alt="" />
+              <strong>AdminOS</strong>
+            </div>
+            <a class="active" href="#operacao">Início</a>
+            <a href="#executivo">Indicadores</a>
+            <a href="#financeiro">Clientes</a>
+            <a href="#financeiro">Financeiro</a>
+            <a href="#operacao">Contratos</a>
+            <a href="#operacao">Equipe</a>
+            <a href="#operacao">Configurações</a>
           </aside>
-          <section class="mock-content">
-            <div class="kpi-row five minimal">
+
+          <div class="dashboard-content">
+            <div class="metric-grid five compact">
               <article><span>Receita</span><strong>R$ 4,38M</strong><small>+12,4%</small></article>
               <article><span>MRR</span><strong>R$ 987K</strong><small>+8,7%</small></article>
               <article><span>Clientes ativos</span><strong>512</strong><small>+14,3%</small></article>
               <article><span>Churn</span><strong>2,41%</strong><small>-0,6pp</small></article>
               <article><span>LTV</span><strong>R$ 7,6K</strong><small>+5,3%</small></article>
             </div>
-            <div class="mock-grid clean-grid">
+
+            <div class="enterprise-grid">
               <article class="panel line-panel">
-                <div class="panel-head"><strong>Receita ao longo do tempo</strong><button>Diário</button></div>
-                <svg viewBox="0 0 520 180" aria-hidden="true">
-                  <polyline points="0,135 35,110 70,128 105,82 140,100 175,74 210,96 245,60 280,72 315,45 350,62 385,48 420,68 455,42 520,22" />
+                <div class="panel-title">
+                  <strong>Receita ao longo do tempo</strong>
+                  <button>Diário</button>
+                </div>
+                <svg viewBox="0 0 720 260" aria-label="Linha de receita">
+                  <polyline points="0,210 48,178 92,202 138,122 184,158 230,108 276,144 322,78 368,104 414,62 460,90 506,66 552,108 600,60 650,42 720,18" />
                 </svg>
               </article>
-              <article class="panel donut-panel">
-                <div class="panel-head"><strong>Distribuição por plano</strong></div>
+
+              <article class="panel donut-panel enterprise-donut">
+                <div class="panel-title"><strong>Distribuição por plano</strong></div>
                 <div class="donut"><span>R$ 4,38M<small>Total</small></span></div>
-                <ul class="legend">
-                  <li><b></b>Corporativo 58%</li><li><b></b>Profissional 27%</li><li><b></b>Crescimento 12%</li>
+                <ul class="legend-list">
+                  <li><b></b>Corporativo <strong>58%</strong></li>
+                  <li><b></b>Profissional <strong>27%</strong></li>
+                  <li><b></b>Crescimento <strong>12%</strong></li>
                 </ul>
               </article>
+
               <article class="panel table-panel">
-                <div class="panel-head"><strong>Top clientes</strong></div>
+                <div class="panel-title"><strong>Top clientes</strong></div>
                 <table>
-                  <tr><th>Cliente</th><th>Plano</th><th>MRR</th><th>Saúde</th></tr>
-                  <tr><td>TechNova Ltda.</td><td>Corporativo</td><td>R$ 82.500</td><td><em>Alta</em></td></tr>
-                  <tr><td>DataSphere S.A.</td><td>Corporativo</td><td>R$ 67.800</td><td><em>Alta</em></td></tr>
-                  <tr><td>Grupo Orion</td><td>Profissional</td><td>R$ 34.900</td><td><em class="warn">Média</em></td></tr>
+                  <thead><tr><th>Cliente</th><th>Plano</th><th>MRR</th><th>Saúde</th></tr></thead>
+                  <tbody>
+                    <tr><td>TechNova Ltda.</td><td>Corporativo</td><td>R$ 82.500</td><td><em>Alta</em></td></tr>
+                    <tr><td>DataSphere S.A.</td><td>Corporativo</td><td>R$ 67.800</td><td><em>Alta</em></td></tr>
+                    <tr><td>Grupo Orion</td><td>Profissional</td><td>R$ 34.900</td><td><em class="warn">Média</em></td></tr>
+                  </tbody>
                 </table>
               </article>
+
               <article class="panel shortcut-panel">
-                <div class="panel-head"><strong>Configurações rápidas</strong></div>
-                <div><button>Usuários<small>Gerenciar acessos</small></button><button>Planos<small>Gerenciar planos</small></button></div>
-                <div><button>Integrações<small>Gerenciar apps</small></button><button>Faturamento<small>Configurar cobrança</small></button></div>
+                <div class="panel-title"><strong>Configurações rápidas</strong></div>
+                <div class="shortcut-grid">
+                  <button><strong>Usuários</strong><small>Gerenciar acessos</small></button>
+                  <button><strong>Planos</strong><small>Gerenciar planos</small></button>
+                  <button><strong>Integrações</strong><small>Gerenciar apps</small></button>
+                  <button><strong>Faturamento</strong><small>Configurar cobrança</small></button>
+                </div>
               </article>
             </div>
-          </section>
+          </div>
         </div>
-      </section>
-
-      <section class="design-system">
-        <article>
-          <h2>Paleta de cores</h2>
-          <div class="swatches"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-        </article>
-        <article>
-          <h2>Tipografia</h2>
-          <strong>Inter</strong>
-          <p>Aa Bb Cc 012345</p>
-        </article>
-        <article>
-          <h2>Componentes</h2>
-          <button>Botão primário</button><button class="secondary">Botão secundário</button><em>Chip</em><small>Badge 12</small>
-        </article>
-        <article class="dark-preview">
-          <h2>Variação dark mode</h2>
-          <div><span></span><span></span><span></span></div>
-        </article>
       </section>
     </main>
   </body>

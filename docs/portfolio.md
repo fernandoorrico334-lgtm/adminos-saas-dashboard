@@ -1,18 +1,18 @@
 # Descrição para GitHub
 
-AdminOS é uma prancha visual com quatro propostas de painel administrativo SaaS em português do Brasil.
+AdminOS é um painel administrativo SaaS em dark mode, com seções verticais para operação executiva, financeiro/CRM, suporte e gestão enterprise.
 
 ## Diferenciais
 
-- Quatro direções visuais em uma única página.
-- Interfaces de gestão reais: executivo, financeiro, CRM, suporte, auditoria e indicadores.
-- Composição profissional para apresentação a cliente.
-- Layout responsivo feito com HTML e CSS puro.
-- Sem dependências externas.
+- Visual escuro, profissional e pronto para portfólio.
+- Quatro áreas de produto organizadas verticalmente.
+- Mapa mundi em SVG para saúde global dos clientes.
+- Interfaces reais de gestão: KPIs, faturas, pipeline, chamados, SLA, clientes e configurações.
+- HTML e CSS puro, sem dependências.
 
 ## Sugestão de descrição curta
 
-Quatro propostas visuais de painel administrativo SaaS em HTML e CSS, com layouts executivo, financeiro/CRM, suporte e enterprise clean.
+Painel administrativo SaaS dark mode com visão executiva, financeiro/CRM, suporte com mapa mundi e operação enterprise em HTML e CSS.
 
 ## Tópicos GitHub
 
@@ -21,6 +21,7 @@ admin-dashboard
 saas
 crm
 dashboard-ui
+dark-mode
 html-css
 portfolio
 frontend
